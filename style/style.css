@@ -5,5 +5,25 @@
 }
 
 header{
-    
+    background-color: #0D0C10;
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 12px;
+    height: 10vh;
+    align-items: center;
+}
+.menu ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu ul li{
+    list-style-type: none;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    margin-right: 8px;
+    padding: 8px;
 }
