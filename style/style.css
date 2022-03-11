@@ -5,7 +5,7 @@
 }
 
 header{
-    background-color: #0D0C10;
+    background-color: #3e2f6d;
     display: flex;
     justify-content: space-between;
     padding: 6px 12px;
@@ -26,4 +26,25 @@ header{
     color: white;
     margin-right: 8px;
     padding: 8px;
+}
+.headerbanner{
+    width: 100%;
+    padding: 15px 22px;
+    height: 400px;
+    background-color: #ccc;
+}
+
+.main{
+    width: 100%;
+    background-color: rgb(75, 46, 46);
+    padding: 10px 20px;
+    
+}
+
+
+
+.box-card{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }

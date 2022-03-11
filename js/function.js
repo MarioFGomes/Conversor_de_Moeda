@@ -1,15 +1,11 @@
 (function(){
-
+   
+        var seletor=document.getElementById('seleteMoedaheader');
     //PegardadosAPI();
 
     //testeApi();
     PegarListaPaisesAPI();
-   function PreencherSelect(data){
-
-    for (i = 0; i <= data.length; i++) {
-        $('select').append('<option value='+data[i]+'>' + data[i] + '</option>');
-    }
-   }  
+   
 })();
 
 
@@ -25,6 +21,7 @@ function PegardadosAPI(){
 }
 //Endpoint Pegando os Tipos de Moedas
 function PegarListaPaisesAPI(){
+    let dados;
     const host = 'api.frankfurter.app';
     fetch(`https://${host}/currencies`)
     .then(function(response){
@@ -34,6 +31,20 @@ function PegarListaPaisesAPI(){
         //alert(JSON.stringify(data));
         alert(Object.keys(data));
         alert(Object.values(data));
+        
+        PreencherSelect(data);
     });
+
 }
+
+function PreencherSelect(data){
+    
+    for (i = 0; i <= data.length; i++) {
+        if(data[i]=="USD" || data[i]=="EUR"){
+            
+            seletor.append('<option value='+data[i]+'>' + data[i] + '</option>');
+        }
+        
+    }
+   }
 
