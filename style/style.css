@@ -1,7 +1,9 @@
+
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto','Unna',sans-serif;
 }
 
 header{
@@ -11,6 +13,7 @@ header{
     padding: 6px 12px;
     height: 10vh;
     align-items: center;
+    
 }
 .menu ul{
     display: flex;
