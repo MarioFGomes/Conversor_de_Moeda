@@ -23,9 +23,9 @@
                 <li><a href="#">Conversor</a></li>
                 <li><a href="#">Criptomoeda</a></li>
                 <li>
-                <select id="seleteMoedaheader">
-                    <option></option>
-                    <option></option>
+                <select id="seleteMoedaheader" onchange="SeletedTaxa()">
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
                 </select>
             </li>
             </ul>
@@ -37,48 +37,22 @@
         <p>Aqui deixamos você informado sobre a taxa de câmbio das principais moedas do mercado</p>  
     </section>
 
-    <section class="main">
-        <h3>Filtro</h3>
+    <section class="main" id="maain">
+        
         <form>
             <label for="dataInicio">De</label>
             <input type="date" id="dataInicio">
             <label for="dataFim">à</label>
             <input type="date" id="dataFim">
         </form>
-        <div class="box-card">
-        <div class="card1">
-            <img>
-            <h4>Pais</h4>
-            <hr>
-            <p>Valor:</p>
+        <div class="box-card" id="cards">
+        
         </div>
-
-        <div class="card1">
-            <img>
-            <h4>Pais</h4>
-            <hr>
-            <p>Valor:</p>
-        </div>
-
-        <div class="card1">
-            <img>
-            <h4>Pais</h4>
-            <hr>
-            <p>Valor:</p>
-        </div>
-
-        <div class="card1">
-            <img>
-            <h4>Pais</h4>
-            <hr>
-            <p>Valor:</p>
-        </div>
-    </div>
     </section>
 
-    <section>
+    <section class="container-conver">
         <h2>Conversor</h2>
-        <div>
+        <div class="div-conversor">
             <div>
                 <h3>Converte aqui para os diferentes tipos de moedas</h3>
             </div>
@@ -102,10 +76,15 @@
         </div>
     </section>
 
+    <section class="criptomoeda">
+
+    </section>
+
     <footer>
         <blockquote>As Taxas de referência de Câmbio são publicadas pelo Banco Central Europeu</blockquote>
     </footer>
 
-    <script src="js/function.js"></script>
+    <!--<script src="js/function.js"></script>-->
+    <script src="js/APIFunction.js"></script>
 </body>
 </html>
